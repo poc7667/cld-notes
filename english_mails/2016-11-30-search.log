@@ -1,0 +1,96 @@
+36.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+11:22:31.0 (499022)|USER_INFO|[EXTERNAL]|00536000003B6DU|wei@gaurav-collections-dev.com|Pacific Standard Time|GMT-08:00
+11:22:31.0 (535566)|EXECUTION_STARTED
+11:22:31.0 (540550)|CODE_UNIT_STARTED|[EXTERNAL]|06636000006LnIf|VF: /apex/Search
+11:22:31.0 (1299296)|VF_DESERIALIZE_VIEWSTATE_BEGIN|06636000006LnIf
+11:22:31.0 (65032574)|VF_DESERIALIZE_VIEWSTATE_END
+11:22:31.0 (68137035)|SYSTEM_MODE_ENTER|true
+11:22:31.0 (68329051)|SYSTEM_MODE_ENTER|false
+11:22:31.0 (68334620)|SYSTEM_MODE_EXIT|false
+11:22:31.0 (75530205)|SYSTEM_MODE_ENTER|true
+11:22:31.0 (76525641)|SYSTEM_MODE_ENTER|true
+11:22:31.0 (77319636)|SYSTEM_MODE_ENTER|true
+11:22:31.0 (77952020)|SYSTEM_MODE_ENTER|true
+11:22:31.0 (78109789)|SYSTEM_MODE_ENTER|false
+11:22:31.0 (78313970)|USER_DEBUG|[587]|DEBUG|(search) Search term: con_
+11:22:31.0 (79763494)|USER_DEBUG|[312]|DEBUG|Query: 'con_'
+11:22:31.0 (79847169)|USER_DEBUG|[317]|DEBUG|Candidate: Collection Status
+11:22:31.0 (79925640)|USER_DEBUG|[317]|DEBUG|Candidate: Bank Account
+11:22:31.0 (80004218)|USER_DEBUG|[317]|DEBUG|Candidate: Contract
+11:22:31.0 (80049646)|USER_DEBUG|[317]|DEBUG|Candidate: Queue
+11:22:31.0 (80091680)|USER_DEBUG|[317]|DEBUG|Candidate: Account
+11:22:31.0 (80137644)|USER_DEBUG|[317]|DEBUG|Candidate: Contact
+11:22:31.0 (80370529)|USER_DEBUG|[326]|DEBUG|Pattern to check: ((^collection status)&#124;(^bank account)&#124;(^contract)&#124;(^queue)&#124;(^account)&#124;(^contact)).+
+11:22:31.0 (80660237)|USER_DEBUG|[339]|DEBUG|Category: null
+11:22:31.0 (84958119)|SOQL_EXECUTE_BEGIN|[7]|Aggregations:0|SELECT Id, Name, Generated_Sequence__c FROM Source_System__c
+11:22:31.0 (88576092)|SOQL_EXECUTE_END|[7]|Rows:3
+11:22:31.0 (280768925)|SOSL_EXECUTE_BEGIN|[281]|FIND {con_} IN ALL FIELDS RETURNING account(id,name),contact(id,name),bank_account__c(id,name),contract_status__c(id,name),loan_account__c(id,name),queue__c(id,name)
+11:22:31.0 (322507848)|SOSL_EXECUTE_END|[281]|Rows:7
+11:22:31.0 (322803335)|USER_DEBUG|[628]|DEBUG|start lstSearchResult
+11:22:31.0 (323968645)|USER_DEBUG|[636]|DEBUG|Table: loan_account__c
+11:22:31.0 (324105849)|USER_DEBUG|[637]|DEBUG|(Loan_Account__c:{Id=a0z360000026ui7AAA, Name=CON_N7}, Loan_Account__c:{Id=a0z360000018V8vAAE, Name=CON_N4}, Loan_Account__c:{Id=a0z360000018V8tAAE, Name=CON_N3}, Loan_Account__c:{Id=a0z360000018V8qAAE, Name=CON_N6}, Loan_Account__c:{Id=a0z360000018V8uAAE, Name=CON_N2}, Loan_Account__c:{Id=a0z360000018V8sAAE, Name=CON_N1}, Loan_Account__c:{Id=a0z360000018V8rAAE, Name=CON_N5})
+11:22:31.0 (324365677)|USER_DEBUG|[640]|DEBUG|Id: a0z360000026ui7AAA
+11:22:31.0 (324461532)|USER_DEBUG|[645]|DEBUG|sr
+11:22:31.0 (324513365)|USER_DEBUG|[646]|DEBUG|Loan_Account__c:{Id=a0z360000026ui7AAA, Name=CON_N7}
+11:22:31.0 (324691409)|USER_DEBUG|[640]|DEBUG|Id: a0z360000018V8vAAE
+11:22:31.0 (324717674)|USER_DEBUG|[645]|DEBUG|sr
+11:22:31.0 (324757071)|USER_DEBUG|[646]|DEBUG|Loan_Account__c:{Id=a0z360000018V8vAAE, Name=CON_N4}
+11:22:31.0 (324919685)|USER_DEBUG|[640]|DEBUG|Id: a0z360000018V8tAAE
+11:22:31.0 (324937797)|USER_DEBUG|[645]|DEBUG|sr
+11:22:31.0 (324963203)|USER_DEBUG|[646]|DEBUG|Loan_Account__c:{Id=a0z360000018V8tAAE, Name=CON_N3}
+11:22:31.0 (325093708)|USER_DEBUG|[640]|DEBUG|Id: a0z360000018V8qAAE
+11:22:31.0 (325112459)|USER_DEBUG|[645]|DEBUG|sr
+11:22:31.0 (325137456)|USER_DEBUG|[646]|DEBUG|Loan_Account__c:{Id=a0z360000018V8qAAE, Name=CON_N6}
+11:22:31.0 (325288325)|USER_DEBUG|[640]|DEBUG|Id: a0z360000018V8uAAE
+11:22:31.0 (325319547)|USER_DEBUG|[645]|DEBUG|sr
+11:22:31.0 (325386310)|USER_DEBUG|[646]|DEBUG|Loan_Account__c:{Id=a0z360000018V8uAAE, Name=CON_N2}
+11:22:31.0 (325528393)|USER_DEBUG|[640]|DEBUG|Id: a0z360000018V8sAAE
+11:22:31.0 (325546102)|USER_DEBUG|[645]|DEBUG|sr
+11:22:31.0 (325570941)|USER_DEBUG|[646]|DEBUG|Loan_Account__c:{Id=a0z360000018V8sAAE, Name=CON_N1}
+11:22:31.0 (325694202)|USER_DEBUG|[640]|DEBUG|Id: a0z360000018V8rAAE
+11:22:31.0 (325711757)|USER_DEBUG|[645]|DEBUG|sr
+11:22:31.0 (325736341)|USER_DEBUG|[646]|DEBUG|Loan_Account__c:{Id=a0z360000018V8rAAE, Name=CON_N5}
+11:22:31.0 (325972521)|USER_DEBUG|[652]|DEBUG|end lstSearchResult
+11:22:31.0 (331914482)|USER_DEBUG|[433]|DEBUG|Handling source_system__c...
+11:22:31.0 (332024336)|USER_DEBUG|[436]|DEBUG|Handling lookup source_system__c...
+11:22:31.0 (347113435)|USER_DEBUG|[433]|DEBUG|Handling queue_contract__c...
+11:22:31.0 (347206319)|USER_DEBUG|[460]|DEBUG|Handling child queue_contract__c...
+11:22:31.0 (349018755)|USER_DEBUG|[433]|DEBUG|Handling queue__c...
+11:22:31.0 (349044269)|USER_DEBUG|[436]|DEBUG|Handling lookup queue__c...
+11:22:31.0 (362378795)|USER_DEBUG|[433]|DEBUG|Handling clcommon__party__c...
+11:22:31.0 (362416656)|USER_DEBUG|[460]|DEBUG|Handling child clcommon__party__c...
+11:22:31.0 (363913002)|USER_DEBUG|[433]|DEBUG|Handling account...
+11:22:31.0 (363942663)|USER_DEBUG|[436]|DEBUG|Handling lookup account...
+11:22:31.0 (381051855)|USER_DEBUG|[433]|DEBUG|Handling contact...
+11:22:31.0 (381093565)|USER_DEBUG|[436]|DEBUG|Handling lookup contact...
+11:22:31.0 (391831653)|USER_DEBUG|[672]|DEBUG|Query: SELECT name,days_past_due__c,delinquent_amount__c,external_id__c,source_system__c,Source_System__r.id,(SELECT queue__c,user__c,Queue__r.id FROM queue_contracts__r WHERE (Status__c = 'Open') ORDER BY queue__c),(SELECT id,clcommon__account__c,clcommon__contact__c,clcommon__Account__r.id,clcommon__Signing_on_Behalf_of__r.id,clcommon__Contact__r.id FROM parties__r ORDER BY id) FROM loan_account__c WHERE (Id IN ('a0z360000026ui7AAA','a0z360000018V8vAAE','a0z360000018V8tAAE','a0z360000018V8qAAE','a0z360000018V8uAAE','a0z360000018V8sAAE','a0z360000018V8rAAE')) ORDER BY name
+11:22:31.0 (394968431)|SOQL_EXECUTE_BEGIN|[674]|Aggregations:2|SELECT name,days_past_due__c,delinquent_amount__c,external_id__c,source_system__c,Source_System__r.id,(SELECT queue__c,user__c,Queue__r.id FROM queue_contracts__r WHERE (Status__c = 'Open') ORDER BY queue__c),(SELECT id,clcommon__account__c,clcommon__contact__c,clcommon__Account__r.id,clcommon__Signing_on_Behalf_of__r.id,clcommon__Contact__r.id FROM parties__r ORDER BY id) FROM loan_account__c WHERE (Id IN ('a0z360000026ui7AAA','a0z360000018V8vAAE','a0z360000018V8tAAE','a0z360000018V8qAAE','a0z360000018V8uAAE','a0z360000018V8sAAE','a0z360000018V8rAAE')) ORDER BY name
+11:22:31.0 (433274000)|SOQL_EXECUTE_END|[674]|Rows:7
+11:22:31.0 (433692117)|SYSTEM_MODE_EXIT|false
+11:22:31.0 (440603684)|SYSTEM_MODE_ENTER|true
+11:22:31.0 (440727258)|SYSTEM_MODE_ENTER|false
+11:22:31.0 (440824549)|USER_DEBUG|[691]|DEBUG|(getSearchResults) Search term: con_
+11:22:31.0 (440856053)|SYSTEM_MODE_EXIT|false
+11:22:31.0 (442770713)|SYSTEM_MODE_ENTER|true
+11:22:31.0 (492279138)|VF_SERIALIZE_VIEWSTATE_BEGIN|06636000006LnIf
+11:22:31.0 (528906566)|VF_SERIALIZE_VIEWSTATE_END
+11:22:31.541 (541632973)|CUMULATIVE_LIMIT_USAGE
+11:22:31.541 (541632973)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 12 out of 50000
+  Number of SOSL queries: 1 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 181 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:22:31.541 (541632973)|CUMULATIVE_LIMIT_USAGE_END
+
+11:22:31.0 (541693195)|CODE_UNIT_FINISHED|VF: /apex/Search
+11:22:31.0 (543937863)|EXECUTION_FINISHED
+ 

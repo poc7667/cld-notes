@@ -1,0 +1,44 @@
+{
+  "attributes": {
+    "type": "Loan_Account__c",
+    "url": "/services/data/v38.0/sobjects/Loan_Account__c/a0z360000018V8qAAE"
+  },
+  "Name": "CON_N6",
+  "Days_Past_Due__c": 4,
+  "Delinquent_Amount__c": 50000.0,
+  "External_ID__c": "SN1:C00001",
+  "Source_System__c": "a1A360000018GuzEAE",
+  "Id": "a0z360000018V8qAAE",
+  "Parties__r": {
+    "totalSize": 1,
+    "done": true,
+    "records": [
+      {
+        "attributes": {
+          "type": "clcommon__Party__c",
+          "url": "/services/data/v38.0/sobjects/clcommon__Party__c/a0e36000004IZm4AAG"
+        },
+        "CL_Contract__c": "a0z360000018V8qAAE",
+        "Id": "a0e36000004IZm4AAG",
+        "clcommon__Account__c": "0013600000Qn8lYAAR",
+        "clcommon__Contact__c": "0033600000GgJjZAAV"
+      }
+    ]
+  },
+  "Queue_Contracts__r": {
+    "totalSize": 1,
+    "done": true,
+    "records": [
+      {
+        "attributes": {
+          "type": "Queue_Contract__c",
+          "url": "/services/data/v38.0/sobjects/Queue_Contract__c/a1436000001gmm7AAA"
+        },
+        "Contract__c": "a0z360000018V8qAAE",
+        "Id": "a1436000001gmm7AAA",
+        "Queue__c": "a1736000001LNbdAAG",
+        "User__c": "005360000038nH1AAI"
+      }
+    ]
+  }
+}
